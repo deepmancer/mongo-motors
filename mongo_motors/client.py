@@ -65,7 +65,7 @@ class AsyncMongo:
         """Creates a new session or returns an existing one."""
         await self.connect()
         try:
-            yield self._mongo_client[self._config.db]
+            yield self._mongo_client[self._config.database] if self._config.database else self._mongo_client.get_default_database()
         except Exception as e:
             raise MongoSessionCreationError(url=self.url, message=str(e))
 
