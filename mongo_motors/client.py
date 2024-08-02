@@ -3,7 +3,6 @@ import contextlib
 from typing import Dict, Optional, AsyncIterator
 
 from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase
-from pydantic import BaseModel
 
 from .config import MongoConfig
 from .exceptions import MongoConnectionError, MongoSessionCreationError
