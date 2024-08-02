@@ -28,7 +28,7 @@ class MongoConfig(BaseModel):
     host: str = Field(default_factory=lambda: env_var("MONGO_HOST", default="localhost"))
     port: int = Field(default_factory=lambda: env_var("MONGO_PORT", default=27017, cast=int))
     db: str = Field(default_factory=lambda: env_var("MONGO_DB", default="mydatabase"))
-    username: Optional[str] = Field(default_factory=lambda: env_var("MONGO_USER", default=None))
+    user: Optional[str] = Field(default_factory=lambda: env_var("MONGO_USER", default=None))
     password: Optional[str] = Field(default_factory=lambda: env_var("MONGO_PASSWORD", default=None))
     url: Optional[str] = Field(default=None)
 
@@ -43,6 +43,6 @@ class MongoConfig(BaseModel):
         return self.__repr__()
 
     def get_url(self) -> str:
-        if self.username and self.password:
-            return f"mongodb://{self.username}:{self.password}@{self.host}:{self.port}"
+        if self.user and self.password:
+            return f"mongodb://{self.user}:{self.password}@{self.host}:{self.port}"
         return f"mongodb://{self.host}:{self.port}"
