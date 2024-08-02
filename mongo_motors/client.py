@@ -15,6 +15,7 @@ class AsyncMongo:
     _locks: Dict[str, asyncio.Lock] = {}
 
     def __new__(cls, config: MongoConfig, *args, **kwargs) -> 'AsyncMongo':
+        """Ensures a singleton instance for each unique MongoDB connection URL."""
         url: str = config.get_url()
         if url not in cls._locks:
             cls._locks[url] = asyncio.Lock()

@@ -44,5 +44,5 @@ class MongoConfig(BaseModel):
 
     def get_url(self) -> str:
         if self.username and self.password:
-            return f"mongodb://{self.username}:{self.password}@{self.host}:{self.port}/{self.db}"
-        return f"mongodb://{self.host}:{self.port}/{self.db}"
+            return f"mongodb://{self.username}:{self.password}@{self.host}:{self.port}"
+        return f"mongodb://{self.host}:{self.port}"
