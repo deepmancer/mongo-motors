@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="mongo_motors",
-    version="0.4.1",
+    version="0.4.2",
     description="Mongo Motors is an asynchronous, singleton-based connection pooling mechanism for MongoDB",
     author="Alireza Heidari",
     author_email="alirezaheidari.cs@gmail.com",
@@ -11,6 +11,7 @@ setup(
     include_package_data=True,
     install_requires=[
         "motor",
+        "pymongo",
         "python-decouple",
         "pydantic>=2",
     ],
