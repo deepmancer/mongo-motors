@@ -78,3 +78,11 @@ class AsyncMongo:
     def url(self) -> str:
         """Returns the MongoDB URL."""
         return self._config.get_url()
+
+    def get_client(self) -> AsyncIOMotorClient:
+        """Returns the MongoDB client."""
+        return self._mongo_client
+    
+    def get_database(self) -> AsyncIOMotorDatabase:
+        """Returns the MongoDB database."""
+        return self._mongo_client[self._config.database] if self._config.database else self._mongo_client.get_default_database()
