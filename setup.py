@@ -6,7 +6,7 @@ setup(
     description="Mongo Motors is an asynchronous, singleton-based connection pooling mechanism for MongoDB",
     author="Alireza Heidari",
     author_email="alirezaheidari.cs@gmail.com",
-    url="https://github.com/alirezaheidari-cs/mongo-motors",
+    url="https://github.com/deepmancer/mongo-motors",
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
@@ -33,8 +33,8 @@ setup(
     ],
     python_requires='>=3.6',
     project_urls={
-        "Documentation": "https://github.com/alirezaheidari-cs/mongo-motors#readme",
-        "Source": "https://github.com/alirezaheidari-cs/mongo-motors",
-        "Tracker": "https://github.com/alirezaheidari-cs/mongo-motors/issues",
+        "Documentation": "https://github.com/deepmancer/mongo-motors#readme",
+        "Source": "https://github.com/deepmancer/mongo-motors",
+        "Tracker": "https://github.com/deepmancer/mongo-motors/issues",
     },
 )

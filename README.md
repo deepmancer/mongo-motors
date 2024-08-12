@@ -107,4 +107,4 @@ await mongo_client.disconnect()
 ```
 
 # License
-This project is licensed under the Apache License 2.0. See the [LICENSE](https://github.com/alirezaheidari-cs/mongo-motors/blob/main/LICENSE) file for more details.
+This project is licensed under the Apache License 2.0. See the [LICENSE](https://github.com/deepmancer/mongo-motors/blob/main/LICENSE) file for more details.
