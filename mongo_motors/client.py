@@ -7,6 +7,7 @@ from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase
 from .config import MongoConfig
 from .exceptions import MongoConnectionError, MongoSessionCreationError
 
+
 class AsyncMongo:
     """A class for managing asynchronous MongoDB connections."""
 
