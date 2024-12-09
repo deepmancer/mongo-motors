@@ -4,9 +4,16 @@
     <img src="https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=MongoDB&logoColor=white" alt="MongoDB">
     <img src="https://img.shields.io/badge/PyPI-3775A9.svg?style=for-the-badge&logo=PyPI&logoColor=white" alt="PyPI">
     <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+    <img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=for-the-badge" alt="License">
 </p>
 
 `mongo-motors` is your go-to Python package for seamless asynchronous MongoDB operations. Built on top of the `motor` library, it provides a robust and efficient way to manage MongoDB connections, ensuring thread-safe and high-performance interactions with your database.
+
+---
+
+| **Source Code** | **Website** |
+|:-----------------|:------------|
+| <a href="https://github.com/deepmancer/mongo-motors" target="_blank">github.com/deepmancer/mongo-motors</a> | <a href="https://deepmancer.github.io/mongo-motors/" target="_blank">deepmancer.github.io/mongo-motors</a> |
 
 ---
 
